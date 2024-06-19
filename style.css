@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("assets/imgbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: verdana;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: verdana;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card {
+    background-color: rgba(130, 6, 6, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: rgb(71, 15, 15);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#muteButton {
+    background-color: rgb(71, 15, 15);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Menengahkan tombol di tengah */
+    display: block;
+    margin-top: 10px;
+}
+
+#muteButton:hover {
+    background-color: darkred;
+}
+.gambar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gambar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gambar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gambar img {
+    width: 500px; /* Ukuran gambar bisa disesuaikan */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.gambar-container img:hover {
+    transform: scale(1.1) translateX(-10px); /* Memperbesar gambar dan geser ke kiri saat dihover */
+}
+
+.musik {
+    max-width: 600px; /* Sesuaikan lebar sesuai kebutuhan */
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px; /* Jarak atas */
+}
+
+.audio-text {
+    padding: 15px; /* Padding teks */
+    background-color: #f0f0f0; /* Warna latar belakang teks */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.audio-text h2 {
+    margin: 0; /* Menghapus margin default */
+    font-size: 18px; /* Ukuran teks */
+    color: black;
+}
+
+audio {
+    width: 100%; /* Lebar 100% */
+    margin-top: 10px; /* Jarak atas */
+    outline: none; /* Menghapus border saat dihover */
+    border: none; /* Menghapus border */
+    border-radius: 10px; /* Sudut melengkung */
+    background-color: #d67272; /* Warna latar belakang */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+audio::-webkit-media-controls {
+    background-color: #f0f0f0; /* Warna kontrol media */
+    border-radius: 10px; /* Sudut melengkung */
+}
+
+.youtube-button {
+    display: inline-block;
+    background-color: rgb(71, 15, 15);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.youtube-button:hover {
+    background-color: darkred;
+}
+
+
+/* Media queries untuk tampilan responsif pada perangkat seluler */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Padding yang lebih kecil pada perangkat seluler */
+    }
+    .Vidiomv, .audioo, .gambar-container, .musik {
+        margin: 10px 0; /* Margin yang lebih kecil pada perangkat seluler */
+    }
+    .Vidiomv video, .audioo audio, .gambar-container img, audio {
+        border-radius: 5px; /* Sudut melengkung yang lebih kecil pada perangkat seluler */
+    }
+    .audio-text h2 {
+        font-size: 16px; /* Ukuran teks yang lebih kecil pada perangkat seluler */
+    }
+}

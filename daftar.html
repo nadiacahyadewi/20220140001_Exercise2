@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="daftar.css">
+    <title>DOM Javascript</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Pendaftaran Tiket Konser</h3>
+        </div>
+        <form onsubmit="kirimData(event)">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="Nama anda" id="nama"><br><br>
+            <label for="tanggal">Tanggal Lahir</label><br>
+            <input type="date" id="tanggal" name="tanggal"><br><br>
+            <label for="semester">Pilih Kursi</label><br>
+            <input type="radio" name="peminatan" id="CAT 1" value="CAT 1">
+            <label for="CAT 1">CAT 1</label><br>
+            <input type="radio" name="peminatan" value="CAT 2">
+            <label for="CAT 2">CAT 2</label><br>
+            <input type="radio" name="peminatan" id="CAT 3" value="CAT 3">
+            <label for="CAT 3">CAT 3</label><br>
+            <input type="radio" name="peminatan" id="CAT 4" value="CAT 4">
+            <label for="CAT 4">CAT 4</label><br><br>
+            <label for="semester">Pilih Metode Pembayaran</label><br>
+            <select id="pembayaran" name="pembayaran">
+                <option value="Virtual Account Bank Transfer">Virtual Account Bank Transfer</option>
+                <option value="Debit/Credit Card">Debit/Credit Card</option>
+                <option value="Mitra/Agen">Mitra/Agen</option>
+                <option value="Paylater">Paylater</option>
+            </select><br><br>
+            <label for="nama">Email</label><br>
+            <input type="text" placeholder="Email anda" id="email"><br><br>
+
+            <label for="alamat">Alamat</label><br>
+            <textarea placeholder="Tulis alamat mu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
